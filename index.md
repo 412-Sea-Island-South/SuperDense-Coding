@@ -72,23 +72,23 @@ And of course, there are rules for decoding as well.
       <th>Final Result</th>
    </tr>
    <tr>
-      <th>|00⟩ + |11⟩</th>
-      <th>|00⟩ + |01⟩</th>
-      <th>|00⟩</th>
+      <td>|00⟩ + |11⟩</td>
+      <td>|00⟩ + |01⟩</td>
+      <td>|00⟩</td>
    </tr>
    <tr>
-      <th>|01⟩ + |10⟩</th>
-      <th>|11⟩ + |10⟩</th>
-      <th>|01⟩</th>
+      <td>|01⟩ + |10⟩</td>
+      <td>|11⟩ + |10⟩</td>
+      <td>|01⟩</td>
    </tr>
    <tr>
-      <th>|00⟩ - |11⟩</th>
-      <th>|00⟩ - |01⟩</th>
-      <th>|10⟩</th>
+      <td>|00⟩ - |11⟩</td>
+      <td>|00⟩ - |01⟩</td>
+      <td>|10⟩</td>
    </tr>
    <tr>
-      <th>-|01⟩ + |10⟩</th>
-      <th>-|11⟩ + |10⟩</th>
-      <th>-|11⟩ = |11⟩</th>
+      <td>-|01⟩ + |10⟩</td>
+      <td>-|11⟩ + |10⟩</td>
+      <td>-|11⟩ = |11⟩</td>
    </tr>
 </table>
