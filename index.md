@@ -12,6 +12,8 @@ There are three steps to the Superdense Coding Protocol, which are
 2. *Encoding*
 3. *Decoding*
    
+How It Works
+------------
 ### Step One: Preparation
 A third party prepares two qubits in the entangled state (superposition).
 Entanglement is when knowing the state of one qubit can help us deduce the state of the second.
