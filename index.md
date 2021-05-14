@@ -155,3 +155,8 @@ plot_histogram(counts)
 <p align="center">
   <img src="https://user-images.githubusercontent.com/81530826/118306185-e6cd2000-b49d-11eb-9394-d9d06e330907.png">
 </p>
+https://user-images.githubusercontent.com/81530826/118306411-43c8d600-b49e-11eb-8421-3569cb56882a.png
+<h4 align="center">SDC Circuit Simulation</h4>
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/81530826/118306411-43c8d600-b49e-11eb-8421-3569cb56882a.png">
+</p>
