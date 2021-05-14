@@ -1,7 +1,7 @@
 🦈 The Superdense Coding Protocol!🦈
 =====================================
-What is the Superdense Coding Protocol?
----------------------------------------
+  
+<h2>What is the Superdense Coding Protocol?</h2>
 In this project, I explored the world of Quantum Cryptography, and learned about the Superdense Coding Protocol.
 The SDC Protocol is a type of Quantum Cryptography, in which two classical bits of information are trabsmitted using one qubit.
 This is like a flipped version of Quantum teleportation, which you can read about [here](https://qiskit.org/textbook/ch-algorithms/teleportation.html).
