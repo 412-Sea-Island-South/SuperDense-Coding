@@ -13,4 +13,12 @@ There are three steps to the Superdense Coding Protocol, which are
 3. *Decoding*
    
 ### Step One: Preparation
-
+A third party prepares two qubits in the entangled state (superposition).
+Entanglement is when knowing the state of one qubit can help us deduce the state of the second.
+They also prepare a third qubit, which will be the messenger
+(i.e it sends the two bits of classical information).
+All three qubits start in the |0⟩ state.  
+Next, to entangle the two qubits, we apply a Hadamard gate to the first qubit and a CNOT gate to the first and second qubits.
+This creates the Bell Pair (a superposition) and completes **Step 1**.
+If you want to learn about quantum gates and operations, [go to this page](https://tksmax.github.io/Project1).
+It also teaches you how to create a superposition, so it's a two in one package.
