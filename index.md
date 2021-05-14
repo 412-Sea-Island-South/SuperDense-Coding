@@ -96,4 +96,4 @@ And of course, there are rules for decoding as well.
    <a href="https://studentsxstudents.com/superdense-coding-sdc-c31a9661c3cd">Learn how to code this in Qiskit!</a>
 </p>
   
-### Reference Materials: Qiskit Code
+#### Reference Materials: Qiskit Code
