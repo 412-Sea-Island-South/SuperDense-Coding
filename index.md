@@ -30,7 +30,7 @@ Now that we have prepared everything, it's time for the action to begin.
 This is where we distribute the entangled pair to our sender and reciever, who I will creatively name S and R.
 There are a few rules for encoding (and later decoding) the message.
 This is just one example of the many different possible rules.
-<h4 align="center">Encoding Rules</h4<
+<h4 align="center">Encoding Rules</h4>
 <table style="width:100%">
    <tr>
       <th>Intended Message</th>
