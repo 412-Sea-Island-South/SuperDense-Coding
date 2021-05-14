@@ -149,3 +149,9 @@ result = qasm_sim.run(qobj).result()
 counts = result.get_counts(qc)
 plot_histogram(counts)
 ```
+  
+#### Reference Materials: Gallery
+<h4 align="center">A sample SDC Circuit</h4>
+<p>
+  <img src="https://user-images.githubusercontent.com/81530826/118306185-e6cd2000-b49d-11eb-9394-d9d06e330907.png">
+</p>
