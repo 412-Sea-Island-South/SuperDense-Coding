@@ -92,3 +92,5 @@ And of course, there are rules for decoding as well.
       <td>-|11⟩ = |11⟩</td>
    </tr>
 </table>
+
+***If you want to learn how to code this in Qiskit, [go here](https://studentsxstudents.com/superdense-coding-sdc-c31a9661c3cd)***
