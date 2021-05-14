@@ -131,8 +131,7 @@ create_bell_pair(qc, 0, 1)
 
 qc.barrier() #adds barrier to make circuit look nicer
 #A encodes A's message onto qubit 0
-message = ["00", "01", "10", "11"][randint(0,3)] #choose a random message
-#message = "I'd like a Double Big Mac Please!"
+message = ["00", "01", "10", "11", "I'd like a Double Big Mac Please!"][randint(0,4)] #choose a random message
 print("Message is", message) #what is the message?
 encode_message(qc, 0, message)
 qc.barrier()
@@ -144,7 +143,6 @@ qc.measure_all()
 #Draw our output
 qc.draw()
 
-#simulation 
 qasm_sim = Aer.get_backend('qasm_simulator')
 qobj = assemble(qc)
 result = qasm_sim.run(qobj).result()
