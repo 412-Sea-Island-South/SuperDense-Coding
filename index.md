@@ -58,3 +58,37 @@ This is just one example of the many different possible rules.
       <td>-|01⟩ + |10⟩</td>
    </tr>
 </table>
+  
+### Step 3: Decoding
+Now that R has recieved S's qubit, he uses his entangled qubit to decode the message.
+In order to do this, he simply reverses the gates which the third party entangled.
+In other words, first R applies a CNOT, followed by a H gate.
+And of course, there are rules for decoding as well.
+<h4 align="center">Decoding Rules</h4>
+<table width="100%" align="center">
+   <tr>
+      <th>Recieved State</th>
+      <th>After CNOT</th>
+      <th>Final Result</th>
+   </tr>
+   <tr>
+      <th>|00⟩ + |11⟩</th>
+      <th>|00⟩ + |01⟩</th>
+      <th>|00⟩</th>
+   </tr>
+   <tr>
+      <th>|01⟩ + |10⟩</th>
+      <th>|11⟩ + |10⟩</th>
+      <th>|01⟩</th>
+   </tr>
+   <tr>
+      <th>|00⟩ - |11⟩</th>
+      <th>|00⟩ - |01⟩</th>
+      <th>|10⟩</th>
+   </tr>
+   <tr>
+      <th>-|01⟩ + |10⟩</th>
+      <th>-|11⟩ + |10⟩</th>
+      <th>-|11⟩ = |11⟩</th>
+   </tr>
+</table>
