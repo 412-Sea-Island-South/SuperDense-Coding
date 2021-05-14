@@ -97,3 +97,57 @@ And of course, there are rules for decoding as well.
 </p>
   
 #### Reference Materials: Qiskit Code
+```python
+# import everything for ease
+from qiskit import *
+from qiskit.visualization import *
+from random import randint
+
+def create_bell_pair(qc, a, b):
+    qc.h(a) #H-gate
+    qc.cx(a,b) #CNOT-gate
+    
+def encode_message(qc, qubit, msg):
+    if msg == "00":
+        pass    #do nothing
+    elif msg == "10":
+        qc.x(qubit) #X-gate
+    elif msg == "01":
+        qc.z(qubit) #Z-gate
+    elif msg == "11":
+        qc.z(qubit) #Z-gate
+        qc.x(qubit) #X-gate
+    else:
+        print("Invalid Message!")
+        
+def decode_message(qc, a, b):
+    qc.cx(a,b) #CNOT-gate
+    qc.h(a) #H-gate
+    
+#Create the quantum circuit with 2 qubits
+qc = QuantumCircuit(2)
+#third party prepares entangled state
+create_bell_pair(qc, 0, 1)
+
+qc.barrier() #adds barrier to make circuit look nicer
+#A encodes A's message onto qubit 0
+message = ["00", "01", "10", "11"][randint(0,3)] #choose a random message
+#message = "I'd like a Double Big Mac Please!"
+print("Message is", message) #what is the message?
+encode_message(qc, 0, message)
+qc.barrier()
+# A the sends qubit to B
+#B applies the recovery protocol
+decode_message(qc, 0, 1)
+#B measures qubits to read A's message
+qc.measure_all()
+#Draw our output
+qc.draw()
+
+#simulation 
+qasm_sim = Aer.get_backend('qasm_simulator')
+qobj = assemble(qc)
+result = qasm_sim.run(qobj).result()
+counts = result.get_counts(qc)
+plot_histogram(counts)
+```
