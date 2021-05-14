@@ -94,5 +94,5 @@ And of course, there are rules for decoding as well.
 </table>
 <p align="center">
    Learn how to code this in Qiskit!
-   <a href = "https://studentsxstudents.com/superdense-coding-sdc-c31a9661c3cd">
+   <a href="https://studentsxstudents.com/superdense-coding-sdc-c31a9661c3cd">Learn how to code this in Qiskit!</a>
 </p>
