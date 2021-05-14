@@ -24,3 +24,37 @@ Next, to entangle the two qubits, we apply a Hadamard gate to the first qubit an
 This creates the Bell Pair (a superposition) and completes **Step 1**.
 If you want to learn about quantum gates and operations, [go to this page](https://tksmax.github.io/Project1).
 It also teaches you how to create a superposition, so it's a two in one package.
+  
+### Step Two: Encoding
+Now that we have prepared everything, it's time for the action to begin.
+This is where we distribute the entangled pair to our sender and reciever, who I will creatively name S and R.
+There are a few rules for encoding (and later decoding) the message.
+This is just one example of the many different possible rules.
+<h4 align="center">Encoding Rules</h4<
+<table style="width:100%">
+   <tr>
+      <th>Intended Message</th>
+      <th>Gates</th>
+      <th>Result ⨉ √2</th>
+   </tr>
+   <tr>
+      <td>00</td>
+      <td>I (Identity)</td>
+      <td>|00⟩ + |11⟩</td>
+   </tr>
+   <tr>
+      <td>01</td>
+      <td>X (NOT)</td>
+      <td>|01⟩ + |10⟩</td>
+   </tr>
+   <tr>
+      <td>10</td>
+      <td>Z (Pauli-Z)</td>
+      <td>|00⟩ - |11⟩</td>
+   </tr>
+   <tr>
+      <td>11</td>
+      <td>ZX</td>
+      <td>-|01⟩ + |10⟩</td>
+   </tr>
+</table>
